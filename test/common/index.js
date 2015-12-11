@@ -10,7 +10,7 @@ describe('chai-performance', function () {
         j = i * 10
       }
     }).performance({
-      margin: 1,
+      margin: 2,
       loop: 20,
       method () {
         for (var i = 0, j; i < amount; i++) { //eslint-disable-line
