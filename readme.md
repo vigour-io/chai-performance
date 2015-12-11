@@ -3,7 +3,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![npm version](https://badge.fury.io/js/chai-performance.svg)](https://badge.fury.io/js/chai-performance)
 
-performance test plugin for the [chai assertion libary](http://chaijs.com/)
+Performance test plugin for the [chai assertion libary](http://chaijs.com/), for the browser and node
 
 ```javascript
 it('division should be as fast a multiplication', function (done) {
