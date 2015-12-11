@@ -31,7 +31,8 @@
       "beforeEach",
       "sinon",
       "expect",
-      "xit"
+      "xit",
+      "chai"
     ]
   }
 }

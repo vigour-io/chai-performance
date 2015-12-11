@@ -1,4 +1,6 @@
 'use strict'
+chai.use(require('../../lib'))
+
 describe('chai-performance', function () {
   it('division should be as fast a multiplication', function (done) {
     this.timeout(50e3)
@@ -9,8 +11,8 @@ describe('chai-performance', function () {
       }
     }).performance({
       margin: 1,
-      loop:10,
-      method: function () {
+      loop: 10,
+      method () {
         for (var i = 0; i < amount; i++) {
           i = i / 10
         }
