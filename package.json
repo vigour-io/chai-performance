@@ -1,0 +1,37 @@
+{
+  "name": "chai-performance",
+  "version": "0.0.1",
+  "description": "chai performance plugin",
+  "main": "index.js",
+  "directories": {
+    "lib": "."
+  },
+  "dependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vigour-io/chai-performance.git"
+  },
+  "keywords": [
+    "chai",
+    "mocha",
+    "browserify",
+    "performance"
+  ],
+  "author": {
+    "name": "Jim de Beer",
+    "email": "jim@vigour.io"
+  },
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach",
+      "sinon",
+      "expect",
+      "xit"
+    ]
+  }
+}
