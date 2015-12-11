@@ -1,13 +1,26 @@
-#colors-browserify
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm version](https://badge.fury.io/js/colors-browserify.svg)](https://badge.fury.io/js/colors-browserify)
+# chai-performance
 
-browser implementation of the [colors](https://www.npmjs.com/package/colors) package
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![npm version](https://badge.fury.io/js/chai-performance.svg)](https://badge.fury.io/js/chai-performance)
+
+performance test plugin for the [chai assertion libary](http://chaijs.com/)
 
 ```javascript
-var colors = require('colors-browserify')
-// requires normal colors package
-console.log('hello'.rainbow)
+it('division should be as fast a multiplication', function (done) {
+  this.timeout(50e3)
+  var amount = 1e6
+  expect(function () {
+    for (var i = 0; i < amount; i++) {
+      i = i * 10
+    }
+  }).performance({
+    margin: 1,
+    loop:10,
+    method: function () {
+      for (var i = 0; i < amount; i++) {
+        i = i / 10
+      }
+    }
+  }, done)
+})
 ```
-
-- themes and safe are not supported yet
