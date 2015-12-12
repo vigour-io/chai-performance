@@ -7,7 +7,11 @@ Performance test plugin for the [chai assertion libary](http://chaijs.com/), for
 
 ```javascript
 var chai = require('chai')
-chai.use(require('chai-performance'))
+var perf = require('chai-performance')
+chai.use(perf)
+
+// use this to enable or disable logs on success (enabled by default in node)
+perf.log = true
 
 describe('chai-performance', function () {
   it('division should be as fast as multiplication', function (done) {
