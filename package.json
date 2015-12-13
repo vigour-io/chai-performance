@@ -1,6 +1,6 @@
 {
   "name": "chai-performance",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "chai performance plugin",
   "main": "lib/index.js",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "bluebird": "3.0.x",
-    "colors-browserify": "~0.0.6"
+    "colors-browserify": "~0.0.7"
   },
   "repository": {
     "type": "git",
