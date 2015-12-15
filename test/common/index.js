@@ -21,4 +21,24 @@ describe('chai-performance', function () {
       }
     }, done)
   })
+
+  it('can use a before method', function (done) {
+    this.timeout(50e3)
+    var amount = 1e3
+    expect(function () {
+      for (var i = 0, j; i < amount; i++) { //eslint-disable-line
+        j = i * 10
+      }
+    }).performance({
+      margin: 1,
+      loop: 10,
+      time: 5,
+      before () {
+        var x = 0
+        for(var i = 0 ; i< 1e5; i++) {
+          x += Math.random()*9999999
+        }
+      }
+    }, done)
+  })
 })
