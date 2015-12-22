@@ -1,6 +1,6 @@
 {
   "name": "chai-performance",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "chai performance plugin",
   "main": "lib/index.js",
   "directories": {
